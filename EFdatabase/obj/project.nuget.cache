@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+BfS7AZoYrIhlIq2K4RWqcqstq0EJ4DohDwNsS1rBZmi6aJ9GhjC6vbUonbxie9Y0eAnWE2GYdQfmQFjQaU03g==",
+  "dgSpecHash": "feMTIBVXuWt/1hxqOtqzI+uPJ5IGQsRX67CnjmyTarrQDj+pIx3TShpK4+694rDOFQP36iXykVfaetVNZ43hLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\heini\\OneDrive\\Own projects\\EFdatabase\\EFdatabase.csproj",
+  "projectFilePath": "C:\\Users\\heini\\OneDrive\\Own projects\\babyDBmodel\\EFdatabase\\EFdatabase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\heini\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\heini\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",

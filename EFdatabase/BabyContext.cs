@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using EFdatabase.Models;
 
-namespace EFGetStarted
+namespace EFdatabase
 {
     public class BabyContext : DbContext
     {
