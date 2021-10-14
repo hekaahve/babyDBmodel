@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\heini\\OneDrive\\Own projects\\BabyDB\\BabyApp\\BabyApp.csproj": {}
+    "C:\\Users\\heini\\OneDrive\\Own projects\\babyDBmodel\\BabyApp\\BabyApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\heini\\OneDrive\\Own projects\\BabyDB\\BabyApp\\BabyApp.csproj": {
+    "C:\\Users\\heini\\OneDrive\\Own projects\\babyDBmodel\\BabyApp\\BabyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\heini\\OneDrive\\Own projects\\BabyDB\\BabyApp\\BabyApp.csproj",
+        "projectUniqueName": "C:\\Users\\heini\\OneDrive\\Own projects\\babyDBmodel\\BabyApp\\BabyApp.csproj",
         "projectName": "BabyApp",
-        "projectPath": "C:\\Users\\heini\\OneDrive\\Own projects\\BabyDB\\BabyApp\\BabyApp.csproj",
+        "projectPath": "C:\\Users\\heini\\OneDrive\\Own projects\\babyDBmodel\\BabyApp\\BabyApp.csproj",
         "packagesPath": "C:\\Users\\heini\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\heini\\OneDrive\\Own projects\\BabyDB\\BabyApp\\obj\\",
+        "outputPath": "C:\\Users\\heini\\OneDrive\\Own projects\\babyDBmodel\\BabyApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
