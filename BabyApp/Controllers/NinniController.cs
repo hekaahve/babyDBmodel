@@ -12,47 +12,47 @@ namespace BabyApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PeeController : ControllerBase
+    public class NinniController : ControllerBase
     {
         private readonly DataContext _context;
 
-        public PeeController(DataContext context)
+        public NinniController(DataContext context)
         {
             _context = context;
         }
 
-        // GET: api/Pee
+        // GET: api/Ninni
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Pee>>> GetPees()
+        public async Task<ActionResult<IEnumerable<Ninni>>> Getninnis()
         {
-            return await _context.Pees.ToListAsync();
+            return await _context.ninnis.ToListAsync();
         }
 
-        // GET: api/Pee/5
+        // GET: api/Ninni/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Pee>> GetPee(int id)
+        public async Task<ActionResult<Ninni>> GetNinni(int id)
         {
-            var pee = await _context.Pees.FindAsync(id);
+            var ninni = await _context.ninnis.FindAsync(id);
 
-            if (pee == null)
+            if (ninni == null)
             {
                 return NotFound();
             }
 
-            return pee;
+            return ninni;
         }
 
-        // PUT: api/Pee/5
+        // PUT: api/Ninni/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutPee(int id, Pee pee)
+        public async Task<IActionResult> PutNinni(int id, Ninni ninni)
         {
-            if (id != pee.Id)
+            if (id != ninni.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(pee).State = EntityState.Modified;
+            _context.Entry(ninni).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace BabyApp.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PeeExists(id))
+                if (!NinniExists(id))
                 {
                     return NotFound();
                 }
@@ -73,36 +73,36 @@ namespace BabyApp.Controllers
             return NoContent();
         }
 
-        // POST: api/Pee
+        // POST: api/Ninni
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Pee>> PostPee(Pee pee)
+        public async Task<ActionResult<Ninni>> PostNinni(Ninni ninni)
         {
-            _context.Pees.Add(pee);
+            _context.ninnis.Add(ninni);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPee", new { id = pee.Id }, pee);
+            return CreatedAtAction("GetNinni", new { id = ninni.Id }, ninni);
         }
 
-        // DELETE: api/Pee/5
+        // DELETE: api/Ninni/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePee(int id)
+        public async Task<IActionResult> DeleteNinni(int id)
         {
-            var pee = await _context.Pees.FindAsync(id);
-            if (pee == null)
+            var ninni = await _context.ninnis.FindAsync(id);
+            if (ninni == null)
             {
                 return NotFound();
             }
 
-            _context.Pees.Remove(pee);
+            _context.ninnis.Remove(ninni);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool PeeExists(int id)
+        private bool NinniExists(int id)
         {
-            return _context.Pees.Any(e => e.Id == id);
+            return _context.ninnis.Any(e => e.Id == id);
         }
     }
 }

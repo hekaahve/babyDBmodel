@@ -8,7 +8,7 @@ namespace BabyApp
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         { }
 
-        public DbSet<Pee> Pees { get; set;}
-        public DbSet<Poo> Poos { get; set; }
+        public DbSet<Ninni> ninnis { get; set;}
+        public DbSet<PosSD2> posSD2s { get; set; }
     }
 }

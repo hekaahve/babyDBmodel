@@ -3,12 +3,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BabyApp.Models
 {
-  public class Pee
+  public class PosSD2
   {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    
     public int Id { get; set; }
-    public string Date { get; set; }
-    public string Number { get; set; }
+    public double Weight { get; set; }
+    public double Age { get; set; }
   }
 }
+    
